@@ -1,0 +1,43 @@
+// _mixins.scss
+@mixin transition($properties...) {
+  transition: $properties;
+  -webkit-transition: $properties;
+}
+
+@mixin box-shadow($shadow...) {
+  box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+}
+
+@mixin gradient-background($start-color, $end-color) {
+  background: linear-gradient(to right, $start-color, $end-color);
+}
+
+@mixin clip-text($background-color, $text-color, $inset-width: 6px) {
+  background: $background-color;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: inset 0 0 $inset-width $text-color;
+  color: transparent;
+}
+
+@mixin center-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column-center-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}

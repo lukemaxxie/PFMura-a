@@ -1,0 +1,16 @@
+// main.scss
+
+// Import variables
+@import '_variables';
+
+// Import base styles
+@import '_base';
+
+// Import layout styles
+@import '_layouts';
+
+// Import component styles
+@import '_components';
+
+// Import mixins
+@import '_mixins';

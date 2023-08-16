@@ -1,0 +1,81 @@
+// _components.scss
+.nav-menu {
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    
+    li {
+      margin-right: 20px;
+      
+      a {
+        color: white;
+        text-decoration: none;
+        
+        &:hover {
+          color: #4faafa;
+        }
+      }
+    }
+  }
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+.sign-in_ggl,
+.sign-in_apl {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  
+  svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    fill: black;
+  }
+  
+  span {
+    font-size: 14px;
+    color: black;
+  }
+}
+
+.note {
+  font-size: 12px;
+  text-align: center;
+  color: #ccc;
+  margin-top: 15px;
+}
+}
