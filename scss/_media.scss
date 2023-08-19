@@ -1,0 +1,33 @@
+// Media query for tablets
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 16px;
+        padding: 10px;
+        .nav-menu {
+            ul {
+              li {
+                margin-right: 10px;
+              }
+            }
+          }
+    }
+  }
+  
+  // Media query for mobile devices
+  @media screen and (max-width: 480px) {
+    header {
+        font-size: 14px;
+        padding: 5px;
+        .nav-menu {
+            ul {
+              li {
+                margin-right: 5px;
+                
+                a {
+                  font-size: 12px;
+                }
+            }
+        }
+    }
+}
+  }
