@@ -1,30 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700);
 body {
-  background-color: #FF9FEF;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23c23f5e' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23459eb0' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23b66872' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23878a9d' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23728e5a' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%239e81b5' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%235f98bc' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23c480db' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%2391b37d' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23d79bd1' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%232fdc7e' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23f27ad0' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-color: teal;
+  background-image: url("../images/worldmap.svg");
   background-attachment: fixed;
   background-size: cover;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  position: relative;
+  min-height: 100vh;
 }
 
 header {
-  background-color: #4faafa;
-  color: rgb(34, 240, 255);
-  padding: 10px;
+  background-color: #ff69a2;
+  color: rgb(255, 255, 255);
+  position: relative;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: 0 25px;
+  transition: 0.3s;
 }
-header .sign-in-button {
-  color: white;
-  text-decoration: none;
+
+.logo img {
+  max-width: 50px !important;
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .normal-image {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 .normal-image img {
@@ -33,8 +46,9 @@ header .sign-in-button {
 }
 
 main .main-content h2 {
-  font-size: 28px;
+  font-size: 40px;
   text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 main .main-content .service {
   text-align: center;
@@ -51,6 +65,7 @@ main .main-content .service h3 {
 main .main-content .service p {
   font-size: 16px;
   text-align: center;
+  background-color: white;
 }
 main .main-content .image-container img {
   max-width: 100%;
@@ -86,23 +101,25 @@ main .main-content .service-cards .service-card h3 {
 main .main-content .service-cards .service-card p {
   font-size: 16px;
   text-align: center;
+  color: #ffffff;
+  justify-content: center;
 }
 
 .form-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 .form-wrapper .form_container {
   background-color: white;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 5px;
+  padding: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0;
 }
 .form-wrapper .form_container .title_container {
   margin-bottom: 20px;
@@ -140,8 +157,8 @@ main .main-content .service-cards .service-card p {
   background-color: #ff9de6;
   color: white;
   border: none;
-  border-radius: 5px;
-  padding: 10px;
+  border-radius: 3px;
+  padding: 5px;
   width: 100%;
   cursor: pointer;
 }
@@ -152,7 +169,7 @@ main .main-content .service-cards .service-card p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 .form-wrapper .form_container .separator hr {
   flex: 1;
@@ -193,81 +210,110 @@ main .main-content .service-cards .service-card p {
 }
 
 footer {
-  padding: 10px;
   text-align: center;
-  background-color: #4faafa;
+  background-color: #ff69a2;
   color: white;
-}
-
-body {
-  background-color: #FF9FEF;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23c23f5e' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23459eb0' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23b66872' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23878a9d' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23728e5a' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%239e81b5' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%235f98bc' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23c480db' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%2391b37d' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23d79bd1' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%232fdc7e' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23f27ad0' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  padding: 20px 0; /* Adjust padding as needed */
+  position: relative;
+  bottom: 0;
 }
 
 header {
-  background-color: #164c7c;
-  color: rgb(34, 240, 255);
-  padding: 10px;
+  background-color: #ff69a2;
+  color: rgb(255, 255, 255);
+  position: relative;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: 0 25px;
+  transition: 0.3s;
 }
-header .sign-in-button {
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ff69a2;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
-header .cool-title {
-  font-size: 50px;
-  background: linear-gradient(to right, rgba(10, 0, 7, 0.502), rgba(3, 0, 0, 0.966));
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  color: transparent;
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #110f0f;
 }
+
+ul.topnav li a.active {
+  background-color: #776464;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
 .normal-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 50vh;
 }
 .normal-image img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 70%;
 }
 
 main .main-content h2 {
-  font-size: 28px;
-}
-main .main-content .service {
+  color: white;
+  font-size: 24px;
   text-align: center;
 }
-main .main-content .service img {
+main .main-content p {
+  color: #ccc;
+  font-size: medium;
+  text-align: center;
+}
+
+.white-text {
+  color: white;
+}
+
+.service {
+  text-align: center;
+}
+.service img {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
   align-items: center;
 }
-main .main-content .service h3 {
-  margin-top: 20px;
-}
-main .main-content .service p {
-  font-size: 16px;
-  text-align: center;
-}
-main .main-content .image-container img {
+
+.image-container img {
   max-width: 100%;
 }
-main .main-content .service-cards {
+
+.service-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin-top: 20px;
 }
+.carousel-inner {
+  width: 640px;
+  height: 360px;
+}
+
 .form-wrapper {
   display: flex;
   justify-content: center;
@@ -294,7 +340,7 @@ main .main-content .service-cards {
 }
 .form-wrapper .form_container .title_container .subtitle {
   font-size: 14px;
-  color: #164c7c;
+  color: white;
 }
 .form-wrapper .form_container .input_container {
   margin-bottom: 15px;
@@ -317,7 +363,7 @@ main .main-content .service-cards {
   vertical-align: middle;
 }
 .form-wrapper .form_container .sign-in_btn {
-  background-color: #e6a3d5;
+  background-color: #73eee8;
   color: white;
   border: none;
   border-radius: 5px;
@@ -334,21 +380,10 @@ main .main-content .service-cards {
   justify-content: center;
   margin: 15px 0;
 }
-.form-wrapper .form_container .separator hr {
-  flex: 1;
-  border: 1px solid #ccc;
-}
 .form-wrapper .form_container .separator span {
   font-size: 14px;
   margin: 0 10px;
 }
-footer {
-  padding: 10px;
-  text-align: center;
-  background-color: #164c7c;
-  color: white;
-}
-
 .nav-menu ul {
   list-style: none;
   padding: 0;
@@ -382,7 +417,7 @@ footer {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #4faafa;
+  background-color: rgba(255, 255, 255, 0.7176470588);
   bottom: 0;
   left: 0;
   transform: scaleX(0);
@@ -396,7 +431,7 @@ footer {
   transform: scaleX(1);
 }
 
-.service-card, main .main-content .service-cards .service-card {
+.service-card, .service-cards .service-card {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -404,28 +439,27 @@ footer {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.service-card:hover, main .main-content .service-cards .service-card:hover {
+.service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
-.service-card img, main .main-content .service-cards .service-card img {
+.service-card img, .service-cards .service-card img {
   max-width: 100%;
   border-radius: 10px;
   margin-bottom: 15px;
 }
-.service-card h3, main .main-content .service-cards .service-card h3 {
+.service-card h3, .service-cards .service-card h3 {
   font-size: 20px;
   margin-bottom: 10px;
 }
-.service-card p, main .main-content .service-cards .service-card p {
+.service-card p, .service-cards .service-card p {
   font-size: 16px;
   text-align: center;
 }
-.service-card .sign-in_ggl, main .main-content .service-cards .service-card .sign-in_ggl, .service-card .form-wrapper .form_container .sign-in_ggl, .form-wrapper .form_container .service-card .sign-in_ggl,
+.service-card .sign-in_ggl, .service-card .form-wrapper .form_container .sign-in_ggl, .form-wrapper .form_container .service-card .sign-in_ggl,
 .service-card .form-wrapper .form_container .sign-in_apl,
 .form-wrapper .form_container .service-card .sign-in_apl,
-.service-card .sign-in_apl,
-main .main-content .service-cards .service-card .sign-in_apl {
+.service-card .sign-in_apl {
   display: flex;
   align-items: center;
   background-color: white;
@@ -435,29 +469,69 @@ main .main-content .service-cards .service-card .sign-in_apl {
   margin-top: 10px;
   cursor: pointer;
 }
-.service-card .sign-in_ggl svg, main .main-content .service-cards .service-card .sign-in_ggl svg, .service-card .form-wrapper .form_container .sign-in_ggl svg, .form-wrapper .form_container .service-card .sign-in_ggl svg,
+.service-card .sign-in_ggl svg, .service-card .form-wrapper .form_container .sign-in_ggl svg, .form-wrapper .form_container .service-card .sign-in_ggl svg,
 .service-card .form-wrapper .form_container .sign-in_apl svg,
 .form-wrapper .form_container .service-card .sign-in_apl svg,
-.service-card .sign-in_apl svg,
-main .main-content .service-cards .service-card .sign-in_apl svg {
+.service-card .sign-in_apl svg {
   width: 18px;
   height: 18px;
   margin-right: 10px;
   fill: black;
 }
-.service-card .sign-in_ggl span, main .main-content .service-cards .service-card .sign-in_ggl span, .service-card .form-wrapper .form_container .sign-in_ggl span, .form-wrapper .form_container .service-card .sign-in_ggl span,
+.service-card .sign-in_ggl span, .service-card .form-wrapper .form_container .sign-in_ggl span, .form-wrapper .form_container .service-card .sign-in_ggl span,
 .service-card .form-wrapper .form_container .sign-in_apl span,
 .form-wrapper .form_container .service-card .sign-in_apl span,
-.service-card .sign-in_apl span,
-main .main-content .service-cards .service-card .sign-in_apl span {
+.service-card .sign-in_apl span {
   font-size: 14px;
   color: black;
 }
-.service-card .note, main .main-content .service-cards .service-card .note, .service-card .form-wrapper .form_container .note, .form-wrapper .form_container .service-card .note {
+.service-card .note, .service-card .form-wrapper .form_container .note, .form-wrapper .form_container .service-card .note {
   font-size: 12px;
   text-align: center;
   color: #ccc;
   margin-top: 15px;
+}
+
+#error-404 {
+  background-image: url("../images/Sad-Mac-404-Error-Page.png");
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(230, 120, 120, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#error-404 h1,
+#error-404 p,
+#error-404 a {
+  font-family: Arial, sans-serif;
+  color: d41414f4f;
+}
+
+#error-404 h1 {
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+#error-404 p {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+#error-404 a {
+  text-decoration: none;
+  color: #f80000;
+  font-weight: bold;
+}
+
+#error-404 a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
@@ -469,7 +543,7 @@ main .main-content .service-cards .service-card .sign-in_apl span {
     margin-right: 10px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   header {
     font-size: 14px;
     padding: 5px;
@@ -477,8 +551,23 @@ main .main-content .service-cards .service-card .sign-in_apl span {
   header .nav-menu ul li {
     margin-right: 5px;
   }
-  header .nav-menu ul li a {
-    font-size: 12px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    font-size: 18px;
+    padding: 15px;
+  }
+  header .nav-menu ul li {
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  header {
+    font-size: 20px;
+    padding: 20px;
+  }
+  header .nav-menu ul li {
+    margin-right: 20px;
   }
 }
 

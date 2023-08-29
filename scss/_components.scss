@@ -37,7 +37,7 @@
       position: absolute;
       width: 100%;
       height: 2px;
-      background-color: #4faafa;
+      background-color: #ffffffb7;
       bottom: 0;
       left: 0;
       transform: scaleX(0);
@@ -114,4 +114,45 @@
   color: #ccc;
   margin-top: 15px;
 }
+}
+#error-404 { 
+  background-image: url('../images/Sad-Mac-404-Error-Page.png'); 
+  background-size:contain;
+  background-position: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(230, 120, 120, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#error-404 h1,
+#error-404 p,
+#error-404 a {
+  font-family: Arial, sans-serif;
+  color: d41414f4f;
+}
+
+#error-404 h1 {
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+#error-404 p {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+#error-404 a {
+  text-decoration: none;
+  color: #f80000;
+  font-weight: bold;
+}
+
+#error-404 a:hover {
+  text-decoration: underline;
 }
