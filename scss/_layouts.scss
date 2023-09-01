@@ -91,10 +91,20 @@ text-align: center;
         @extend .service-card;
       }
     }
-    .carousel-inner {
-      width:640px;
-      height:360px;
+    .custom-carousel {
+      .carousel-inner {
+        width: 640px;
+        height: 360px;
+      } 
     }
+    #newCarousel {
+      .carousel-inner {
+        width: 640px;
+        height: 360px;
+      }
+    }
+    
+    
   
   .form-wrapper {
     display: flex;
