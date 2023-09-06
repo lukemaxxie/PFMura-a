@@ -236,12 +236,15 @@ main .main-content {
   }
 }
 
-footer {
+  footer {
     text-align: center;
     background-color: $secondary-color;
     color: white;
     width: 100%;
-    padding: 20px 0; /* Adjust padding as needed */
-    position: relative;
+    padding: 20px 0; /* Ajusta el padding según sea necesario */
+    position: fixed;
     bottom: 0;
+    left: 0;
+    /* Elimina la altura fija y utiliza una unidad relativa como vh */
+    height: 10vh; /* Ajusta según tus necesidades */
 }
